@@ -208,7 +208,7 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Benefit : 
+                                        Benefit : Jersey, Race Number, Wristband Ticket, Medali
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
@@ -233,7 +233,7 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Benefit : Jersey, Race Number, Wristband Ticket, Medali
+                                        Benefit : Jersey, Race Number, Wristband Ticket
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
