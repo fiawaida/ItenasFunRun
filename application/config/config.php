@@ -23,8 +23,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:8080/FunRun/';
-// $config['base_url'] = 'https://bka.itenas.ac.id/nikahan/';
+// $config['base_url'] = 'http://localhost:8080/FunRun/';
+$config['base_url'] = 'https://bka.itenas.ac.id/ItenasFunRun/';
 date_default_timezone_set('Asia/Jakarta');
 // $config['base_url'] = 'http://localhost:8080/beasiswa/';
 
