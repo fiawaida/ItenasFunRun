@@ -86,7 +86,10 @@
                         <div class="home_caption"><span class="caption">6. Peserta akan berlari sejauh ± 5 km sesuai dengan track lari yang ditentukan oleh panitia.</span></div>
                         <div class="home_caption"><span class="caption">7. Tim FunRun berhak mendiskualifikasi peserta yang terindikasi melakukan kecurangan dalam bentuk apapun.</span></div>
                         <div class="home_caption"><span class="caption">8. Pengambilan Jersey, Race Number, Wristband Ticket dilaksanakan pada tanggal <strong>9 – 11 Agustus 2022</strong> bertempat di Institut Teknologi Nasional Bandung.</span></div>
-                    </div>
+                  		<div class="home_caption"><span class="caption">9. Kegiatan 50th ITENAS FUN RUN akan dimulai pukul 6.00 pagi.</span></div>
+						<div class="home_caption"><span class="caption">10. Peserta diharapkan berkumpul di titik Start pada pukul 5.30 pagi.</span></div>
+
+					</div>
                     <div class="story_middle">
                         <div class="story_middle_group">
                             <img class="middle_image" src="./assets/images/Prewed_edit_2.jpg" alt="">
