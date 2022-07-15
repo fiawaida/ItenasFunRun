@@ -214,15 +214,12 @@
                                         <span class="date">13 Agustus 2022</span>
                                         <span class="time">06.00 - 10.00 (WIB)</span>
                                     </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="infoevent_content col-sm-6">
                                 <div class="infoevent_content_group">
                                     <div class="caption">
-                                        <a class="title">PAKET MEDALI 75K</a>
+                                        <a class="title">REGULAR PACKAGE (IDR 75K)</a>
                                     </div>
                                     <span class="">
                                         <img src="./assets/images/media/75K.png" alt="">
@@ -238,63 +235,6 @@
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
                                         <span class="time">06.00 - 10.00 (WIB)</span>
-                                    </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=""></div>
-                            <div class="infoevent_content col-sm-6">
-                                <div class="infoevent_content_group">
-                                    <div class="caption">
-                                        <a class="title">FREE PACKAGE</a>
-                                    </div>
-                                    <span class="">
-                                        <img src="./assets/images/media/Paket_Medali_150K.png" alt="">
-                                    </span>
-                                    <hr>
-                                    <div class="caption">
-                                        <a class="title" href="<?= base_url('pendaftaran/karyawan'); ?>">Join This Event</a>
-                                    </div>
-                                    <!-- <span class="title">Join This Event</span> -->
-                                    <span class="location">
-                                        Institut Teknologi Nasional<br>
-                                        Jl. PHH.Mustofa Bandung - Bandung
-                                    </span>
-                                    <div class="datetime">
-                                        <span class="date">13 Agustus 2022</span>
-                                        <span class="time">06.00 - 10.00 (WIB)</span>
-                                    </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="infoevent_content col-sm-6">
-                                <div class="infoevent_content_group">
-                                    <div class="caption">
-                                        <a class="title">FREE Mahasiswa</a>
-                                    </div>
-                                    <span class="">
-                                        <img src="./assets/images/media/Paket_Medali_150K.png" alt="">
-                                    </span>
-                                    <hr>
-                                    <div class="caption">
-                                        <a class="title" href="<?= base_url('pendaftaran/mahasiswa'); ?>">Join This Event</a>
-                                    </div>
-                                    <!-- <span class="title">Join This Event</span> -->
-                                    <span class="location">
-                                        Institut Teknologi Nasional<br>
-                                        Jl. PHH.Mustofa Bandung - Bandung
-                                    </span>
-                                    <div class="datetime">
-                                        <span class="date">13 Agustus 2022</span>
-                                        <span class="time">06.00 - 10.00 (WIB)</span>
-                                    </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
                                     </div>
                                 </div>
                             </div>
