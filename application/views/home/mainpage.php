@@ -197,7 +197,7 @@
                             <div class="infoevent_content col-sm-6">
                                 <div class="infoevent_content_group">
                                     <div class="caption">
-                                        <a class="title">PAKET MEDALI 150K</a>
+                                        <a class="title">SPECIAL PACKAGE (IDR 150K)</a>
                                     </div>
                                     <span class="">
                                         <img src="./assets/images/media/150K.png" alt="">
@@ -208,8 +208,7 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Institut Teknologi Nasional<br>
-                                        Jl. PHH.Mustofa Bandung - Bandung
+                                        Benefit : 
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
@@ -234,8 +233,7 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Institut Teknologi Nasional<br>
-                                        Jl. PHH.Mustofa Bandung - Bandung
+                                        Benefit : Jersey, Race Number, Wristband Ticket, Medali
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
