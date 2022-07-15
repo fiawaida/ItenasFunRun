@@ -16,12 +16,6 @@
                                             </video>
                                             <!-- <img src="./assets/images/funslide2.jpg" alt="Image slide" title="Image slide"> -->
                                         </div>
-                                        <div class="item  image">
-                                            <img src="./assets/images/funrun.jpg" alt="Image slide" title="Image slide">
-                                        </div>
-                                        <div class="item  image">
-                                            <img src="./assets/images/fun-run-graphic.jpg" alt="Image slide" title="Image slide">
-                                        </div>
                                     </div>
                                     <ol class="carousel-indicators">
                                         <li data-target="#home_main-slider" data-slide-to="0" class="carousel-1 active ">
