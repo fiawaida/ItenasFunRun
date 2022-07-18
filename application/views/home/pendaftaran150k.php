@@ -8,12 +8,6 @@
                         <div class="row">
                             <div class="page-heading-inner heading-group">
                                 <div class="breadcrumb clearfix">
-                                    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://cs-bridal-1.myshopify.com/" title="Bridal 1" itemprop="url"><span itemprop="title">Home</span></a>
-                                    </span>
-                                    <span class="arrow-space">/</span>
-                                    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                                        <a href="http://demo.themeforshop.com/pages/rsvp" title="Pendaftartaran" itemprop="url"><span itemprop="title">Pendaftaran</span></a>
-                                    </span>
                                 </div>
                             </div>
                         </div>
