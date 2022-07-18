@@ -78,10 +78,9 @@
                         <div class="home_caption"><span class="caption">4. Pembayaran dilakukan setelah melakukan registrasi melalui QRis yang disediakan pada website.</span></div>
                         <div class="home_caption"><span class="caption">5. Pendaftaran akan ditutup hari Minggu, 31 Juli 2022.</span></div>
                         <div class="home_caption"><span class="caption">6. Peserta akan berlari sejauh ± 5 km sesuai dengan track lari yang ditentukan oleh panitia.</span></div>
-                        <div class="home_caption"><span class="caption">7. Tim FunRun berhak mendiskualifikasi peserta yang terindikasi melakukan kecurangan dalam bentuk apapun.</span></div>
-                        <div class="home_caption"><span class="caption">8. Pengambilan Jersey, Race Number, Wristband Ticket dilaksanakan pada tanggal <strong>9 – 11 Agustus 2022</strong> bertempat di Institut Teknologi Nasional Bandung.</span></div>
-                  		<div class="home_caption"><span class="caption">9. Kegiatan 50th ITENAS FUN RUN akan dimulai pukul 6.00 pagi.</span></div>
-						<div class="home_caption"><span class="caption">10. Peserta diharapkan berkumpul di titik Start pada pukul 5.30 pagi.</span></div>
+                        <div class="home_caption"><span class="caption">7. Pengambilan Jersey, Race Number, Wristband Ticket dilaksanakan pada tanggal <strong>9 – 11 Agustus 2022</strong> bertempat di Institut Teknologi Nasional Bandung.</span></div>
+                  		<div class="home_caption"><span class="caption">8. Kegiatan 50th ITENAS FUN RUN akan dimulai pukul 6.00 pagi.</span></div>
+						<div class="home_caption"><span class="caption">9. Peserta diharapkan berkumpul di titik Start pada pukul 5.30 pagi.</span></div>
 
 					</div>
                     <div class="story_middle">
