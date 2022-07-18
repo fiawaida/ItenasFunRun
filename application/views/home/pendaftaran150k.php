@@ -90,6 +90,10 @@
                                                             <label class="label">Alamat :</label>
                                                             <textarea class="form-control" rows="15" cols="75" id="alamat" name="alamat" placeholder="Alamat rumah tinggal saat ini"></textarea>
                                                         </p>
+														 <p class="col-sm-12 input-row">
+                                                            <label class="label">Instagram aktif:</label>
+                                                            <textarea class="form-control" rows="15" cols="75" id="alamat" name="alamat" placeholder="Alamat rumah tinggal saat ini"></textarea>
+                                                        </p>
                                                         <p class="col-sm-12 input-row">
                                                             <label class="label">Kondisi Medis atau Riwayat Penyakit:</label>
                                                             <input class="form-control" type="text" id="medis" name="medis" placeholder="isikan terkait kondisi medis saat ini atau riwayat penyakit yang pernah dialami">
