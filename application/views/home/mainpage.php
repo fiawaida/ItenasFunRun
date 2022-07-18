@@ -58,7 +58,7 @@
 
                                     Aktivitas yang dilakukan bisa dalam bentuk lari, jogging, atau berjalan kaki sesuai track yang telah panitia tentukan.
                                     Untuk event aktivitas lari akan dilakukan di lokasi yang ditentukan oleh penyelenggara.Event offline akan dilakukan di Bandung, detail mengenai lokasi akan diinformasikan lebih lanjut.Penyelenggara akan mengikuti arahan dari Pemerintah Provinsi dan Pusat terkait jumlah kuotapelari yang diizinkan untuk berpartisipasi.
-                                    Periode pendaftaran baru akan dibuka pada tanggal 9 Juli 2022, melalui aplikasi website Itenas Fun Run yang dapat diakses pada website platform.
+                                    Periode pendaftaran baru akan dibuka pada tanggal 15 Juli 2022, melalui aplikasi website Itenas Fun Run yang dapat diakses pada website platform.
                                     Pantau terus informasi registrasi selanjutnya melalui kanal media sosial @ (Instagram, Twitter, Facebook).
                                 </div>
                             </div>
