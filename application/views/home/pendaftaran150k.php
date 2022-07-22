@@ -83,7 +83,7 @@
 
                                                         <p class="col-sm-6 input-row">
                                                             <label class="label">Nomor Dada :</label>
-                                                            <input class="form-control" type="text" id="no_dada" name="no_dada" placeholder="4 digit nomor" value="<?= $no_dada ?>">
+                                                            <input class="form-control" type="text" id="no_dada" name="no_dada" placeholder="4 digit nomor" value="<?= $no_dada++ ?>" readonly>
                                                         </p>
                                                         <span class="">
                                                             <img src="<?= base_url() ?>assets/images/media/size.jpeg" alt="">
