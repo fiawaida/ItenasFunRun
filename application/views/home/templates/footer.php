@@ -57,6 +57,12 @@
 		</section>
 	</div>
 </footer>
+
+<script src="<?php echo base_url() ?>assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 <!-- Modal Lightbox-->
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog">
@@ -79,7 +85,57 @@
 		</li>
 	</ul>
 </div>
+<?php if ($this->session->flashdata('gagalLogin')) { ?>
+	<script>
+		swal({
+			title: "Login Failed!",
+			text: "Email atau password salah, silahkan coba lagi",
+			icon: "error",
+			timer: 2000
+		});
+	</script>
+<?php } ?>
+<?php if ($this->session->flashdata('suksesLogin')) { ?>
+	<script>
+		swal({
+			title: "Login Success!",
+			text: "Anda berhasil login",
+			icon: "success",
+			timer: 2000
+		});
+	</script>
+<?php } ?>
+<?php if ($this->session->flashdata('akun_ada')) { ?>
+	<script>
+		swal({
+			title: "Registration Failed!",
+			text: "Akun sudah terdaftar!",
+			icon: "error",
+			timer: 2000
+		});
+	</script>
+<?php } ?>
 
+<?php if ($this->session->flashdata('insert_akun')) { ?>
+	<script>
+		swal({
+			title: "Registration Success!",
+			text: "Akun sudah tersimpan, silahkan login dan lengkapi data",
+			icon: "success",
+			timer: 3000
+		});
+	</script>
+<?php } ?>
+<?php if ($this->session->flashdata('insert_data', TRUE)) { ?>
+	<script>
+		swal({
+			title: "Insert Success!",
+			text: "Data anda telah berhasil masuk!",
+			icon: "success",
+			timer: 2000
+		});
+	</script>
+<?php } ?>
 <script>
 	$(document).ready(function() {
 		$('#mahasiswa').hide();
