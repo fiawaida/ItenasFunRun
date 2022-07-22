@@ -16,6 +16,12 @@
                                             </video>
                                             <!-- <img src="./assets/images/funslide2.jpg" alt="Image slide" title="Image slide"> -->
                                         </div>
+                                        <div class="item  image">
+                                            <img src="./assets/images/funrun.jpg" alt="Image slide" title="Image slide">
+                                        </div>
+                                        <div class="item  image">
+                                            <img src="./assets/images/fun-run-graphic.jpg" alt="Image slide" title="Image slide">
+                                        </div>
                                     </div>
                                     <ol class="carousel-indicators">
                                         <li data-target="#home_main-slider" data-slide-to="0" class="carousel-1 active ">
@@ -44,6 +50,9 @@
                 </div>
             </section>
         </div>
+        <div class="caption">
+            <a class="button" href="<?= base_url('home/Authlogin'); ?>">Login</a>
+        </div>
         <div class="index-section index-section-story">
             <section class="home_story_layout">
                 <div class="home_story_wrapper">
@@ -55,11 +64,17 @@
                                 </span>
                                 <div class="home_caption">
                                     Institut Teknologi Nasional Bandung mempersembahkan Itenas Fun Run 50th pada hari minggu, 13 Agustus 2022. Event lari yang sudah mencapai tahun ke-3.
-
                                     Aktivitas yang dilakukan bisa dalam bentuk lari, jogging, atau berjalan kaki sesuai track yang telah panitia tentukan.
                                     Untuk event aktivitas lari akan dilakukan di lokasi yang ditentukan oleh penyelenggara.Event offline akan dilakukan di Bandung, detail mengenai lokasi akan diinformasikan lebih lanjut.Penyelenggara akan mengikuti arahan dari Pemerintah Provinsi dan Pusat terkait jumlah kuotapelari yang diizinkan untuk berpartisipasi.
-                                    Periode pendaftaran baru akan dibuka pada tanggal 15 Juli 2022, melalui aplikasi website Itenas Fun Run yang dapat diakses pada website platform.
+                                    Periode pendaftaran akan dibuka sampai pada tanggal 31 Juli 2022, melalui aplikasi website Itenas Fun Run yang dapat diakses pada website platform.
                                     Pantau terus informasi registrasi selanjutnya melalui kanal media sosial @ (Instagram, Twitter, Facebook).
+                                    <hr>
+                                    <span class="home_caption">
+                                        Contact Person :
+                                        <br><a href="#" title="Bridal 1 on Instagram" class="icon-social instagram"><i class="fa fa-whatsapp"></i></a> +62 822-4621-9144 (Zahra)
+                                        <br><a href="#" title="Bridal 1 on Instagram" class="icon-social instagram"><i class="fa fa-whatsapp"></i></a> +62 812-2199-720 (Tsania)
+                                        <br><a href="https://www.instagram.com/50thitenasfunrun/" title="Bridal 1 on Instagram" class="icon-social instagram"><i class="fa fa-instagram"></i></a> @50thitenasfunrun
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -75,14 +90,11 @@
                         <div class="home_caption"><span class="caption">1. Kegiatan 50th ITENAS FUNRUN dibuka untuk umum, karyawan dan mahasiswa Itenas.</span></div>
                         <div class="home_caption"><span class="caption">2. Wajib melakukan registrasi dengan mengisi data diri lengkap secara online melalui website berikut.</span></div>
                         <div class="home_caption"><span class="caption">3. Peserta memilih package yang diinginkan pada saat proses registrasi.</span></div>
-                        <div class="home_caption"><span class="caption">4. Pembayaran dilakukan setelah melakukan registrasi melalui QRis yang disediakan pada website.</span></div>
+                        <div class="home_caption"><span class="caption">4. Pembayaran dilakukan setelah melakukan registrasi melalui QRIS yang disediakan pada website.</span></div>
                         <div class="home_caption"><span class="caption">5. Pendaftaran akan ditutup hari Minggu, 31 Juli 2022.</span></div>
                         <div class="home_caption"><span class="caption">6. Peserta akan berlari sejauh ± 5 km sesuai dengan track lari yang ditentukan oleh panitia.</span></div>
                         <div class="home_caption"><span class="caption">7. Pengambilan Jersey, Race Number, Wristband Ticket dilaksanakan pada tanggal <strong>9 – 11 Agustus 2022</strong> bertempat di Institut Teknologi Nasional Bandung.</span></div>
-                  		<div class="home_caption"><span class="caption">8. Kegiatan 50th ITENAS FUN RUN akan dimulai pukul 6.00 pagi.</span></div>
-						<div class="home_caption"><span class="caption">9. Peserta diharapkan berkumpul di titik Start pada pukul 5.30 pagi.</span></div>
-
-					</div>
+                    </div>
                     <div class="story_middle">
                         <div class="story_middle_group">
                             <img class="middle_image" src="./assets/images/Prewed_edit_2.jpg" alt="">
@@ -91,7 +103,7 @@
                     <br>
                     <br>
                     <div class="story_content story_right ">
-                        <!-- <div class="story_image">
+                        <!-- <div class="story_image"> 
                                 <img class="" src="./assets/images/medal-package.jpg" alt="">
                             </div> -->
                         <!-- <div class="story_title clearfix">
@@ -204,11 +216,14 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Benefit : Jersey, Race Number, Wristband Ticket, Medali
+                                        BENEFIT : JERSEY, RACE NUMBER, WRISTBAND TICKET, MEDALI
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
-                                        <span class="time">06.00 - 10.00 (WIB)</span>
+                                        <span class="time">05.45 - 09.00 (WIB)</span>
+                                    </div>
+                                    <div class="caption">
+                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
                                     </div>
                                 </div>
                             </div>
@@ -226,14 +241,70 @@
                                     </div>
                                     <!-- <span class="title">Join This Event</span> -->
                                     <span class="location">
-                                        Benefit : Jersey, Race Number, Wristband Ticket
+                                        BENEFIT : JERSEY, RACE NUMBER, WRISTBAND TICKET
                                     </span>
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
-                                        <span class="time">06.00 - 10.00 (WIB)</span>
+                                        <span class="time">05.45 - 09.00 (WIB)</span>
+                                    </div>
+                                    <div class="caption">
+                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
                                     </div>
                                 </div>
                             </div>
+                            <div class=""></div>
+                            <!-- <div class="infoevent_content col-sm-6">
+                                <div class="infoevent_content_group">
+                                    <div class="caption">
+                                        <a class="title"></a>
+                                    </div>
+                                    <span class="">
+                                        <img src="./assets/images/media/Paket_Medali_150K.png" alt="">
+                                    </span>
+                                    <hr>
+                                    <div class="caption">
+                                        <a class="title" href="<?= base_url('pendaftaran/karyawan'); ?>">Join This Event</a>
+                                    </div>
+                                    <span class="title">Join This Event</span>
+                            <span class="location">
+                                BENEFIT : JERSEY, RACE NUMBER, WRISTBAND TICKET, MEDALI
+                            </span>
+                            <div class="datetime">
+                                <span class="date">13 Agustus 2022</span>
+                                <span class="time">06.00 - 10.00 (WIB)</span>
+                            </div>
+                            <div class="caption">
+                                <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
+                            </div>
+                        </div>
+                    </div> -->
+                            <!-- 
+                            <div class="infoevent_content col-sm-6">
+                                <div class="infoevent_content_group">
+                                    <div class="caption">
+                                        <a class="title">FREE Mahasiswa</a>
+                                    </div>
+                                    <span class="">
+                                        <img src="./assets/images/media/Paket_Medali_150K.png" alt="">
+                                    </span>
+                                    <hr>
+                                    <div class="caption">
+                                        <a class="title" href="<?= base_url('pendaftaran/mahasiswa'); ?>">Join This Event</a>
+                                    </div>
+                                    <span class="title">Join This Event</span> 
+                            <span class="location">
+                                Institut Teknologi Nasional<br>
+                                Jl. PHH.Mustofa Bandung - Bandung
+                            </span>
+                            <div class="datetime">
+                                <span class="date">13 Agustus 2022</span>
+                                <span class="time">05.45 - 09.00 (WIB)</span>
+                            </div>
+                            <div class="caption">
+                                <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
+                            </div>
+                        </div>
+                    </div> -->
                         </div>
                     </div>
                 </div>
@@ -340,11 +411,3 @@
         </div>
     </section>
 </div> -->
-
-
-<script>
-    function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-    }
-</script>
