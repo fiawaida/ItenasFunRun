@@ -30,6 +30,7 @@
 	<link href="<?= base_url() ?>assets/stylesheets/slideshow-fade.css" rel="stylesheet" type="text/css" media="all">
 	<link href="<?= base_url() ?>assets/stylesheets/slick.css" rel="stylesheet" type="text/css" media="all">
 	<link href="<?= base_url() ?>assets/stylesheets/cs.animate.css" rel="stylesheet" type="text/css" media="all">
+	<link href="<?= base_url() ?>assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" media="all">
 
 	<script type="text/javascript" src="<?= base_url() ?>assets/javascripts/jquery.min.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>assets/javascripts/classie.js"></script>
@@ -45,7 +46,8 @@
 	<script type="text/javascript" src="<?= base_url() ?>assets/javascripts/slick.min.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>assets/javascripts/social-buttons.js"></script>
 	<script type="text/javascript" src="<?= base_url() ?>assets/javascripts/bootstrap.min.js"></script>
-
+	<script type="text/javascript" src="<?= base_url() ?>assets/plugins/select2/select2.full.min.js"></script>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
 </head>
 
 <body class=" no_rtl  index-template">
@@ -65,14 +67,15 @@
 												<a href="<?= base_url('home') ?>"><img src="<?= base_url() ?>assets/images/media/logo.png" alt="" title="Itenas Fun Run 50Th"></a>
 											</div>
 											<h1 style="display:none"><a href="/">FunRun</a></h1>
+											<a href="<?= base_url('home/Authlogin') ?>"><button type="button" class="btn-secondary" data-toggle="modal" data-target="#bukti">
+													LOGIN
+												</button></a>
 										</div>
 									</div>
 									<div class="mobile-navigation">
 
 										<div class="nav-logo visible-xs">
-											<div>
-												<a href="<?= base_url('home') ?>"><img src="<?= base_url() ?>assets/images/funrun" alt="" title="Itenas Fun Run 50Th"></a>
-											</div>
+
 										</div>
 									</div>
 								</div>
