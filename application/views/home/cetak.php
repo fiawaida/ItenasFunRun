@@ -12,36 +12,46 @@
                                             <div class="home_infoevent_content">
                                                 <div class="infoevent_content col-sm-6">
                                                     <div class="infoevent_content_group">
-                                                        <?php if ($undangan['acara'] == "akad") { ?>
-                                                            <span class="title">Akad & Resepsi</span>
-                                                        <?php } else { ?>
-                                                            <span class="title">Resepsi</span>
-                                                        <?php } ?>
-                                                        <span class="location">
-                                                            <?= $undangan['nama'] ?><br>
+                                                        <span class="">
+                                                            <img src="<?= base_url() ?>assets/images/media/icon_funrun.png" alt="">
                                                         </span>
-                                                        <?php if ($undangan['acara'] == "akad") { ?>
-                                                            <div class="datetime">
-                                                                <span class="date">March 19, 2022</span>
-                                                                <span class="time">Akad : 12.30 - 14:30</span>
-                                                            </div>
-                                                            <div class="datetime">
-                                                                <span class="date">March 19, 2022</span>
-                                                                <span class="time">Resepsi : 16.00 - 18:00</span>
-                                                            </div>
-                                                        <?php } else { ?>
-                                                            <div class="datetime">
-                                                                <span class="date">March 19, 2022</span>
-                                                                <span class="time">16.00 - 18:00</span>
-                                                            </div>
+                                                        <?php if ($peserta['id_tiket'] == 1) { ?>
+                                                            <span class="title">Paket Spesial IDR 150k</span>
+                                                        <?php } else if ($peserta['id_tiket'] == 2) { ?>
+                                                            <span class="title">Paket Regular IDR 75k</span>
+                                                        <?php } else if ($peserta['id_tiket'] == 3) { ?>
+                                                            <span class="title">Paket Free Mahasiswa</span>
+                                                        <?php } else if ($peserta['id_tiket'] == 4) { ?>
+                                                            <span class="title">Paket Free Karyawan</span>
                                                         <?php } ?>
-                                                        <h1><?= $undangan['jumlah'] ?> Person</h1>
-                                                        <span class="event-gbr">
-                                                            <img src="<?= base_url('assets/images/no_meja/' . $undangan['img_meja']) ?>">
-                                                        </span>
+                                                        <div class="datetime">
+                                                            <span class="date"><?= $peserta['no_dada'] ?></span>
+                                                            <span class="time"><?= $peserta['nama_peserta'] ?></span>
+                                                        </div>
+                                                        <span class="location">Status : Menunggu Verifikasi Pembayaran</span>
+                                                        <?php if ($peserta['id_tiket'] == 1) { ?>
+                                                            <span class="location">Total Pembayaran : <strong> Rp150.000 </strong></span>
+                                                            <span class="">
+                                                                <img src="<?= base_url('assets/images/media/waiting.jpg') ?>">
+                                                            </span>
+                                                            <br>
+                                                            <hr>
+                                                        <?php } else if ($peserta['id_tiket'] == 2) { ?>
+                                                            <span class="location">Total Pembayaran : <strong> Rp75.000 </strong></span>
+                                                            <span class="">
+                                                                <img src="<?= base_url('assets/images/media/waiting.jpg') ?>">
+                                                            </span>
+                                                            <br>
+                                                            <hr>
+                                                        <?php } else if ($peserta['id_tiket'] == 3) { ?>
+                                                            <span class="location">Total Pembayaran : <strong> Free </strong></span>
+                                                        <?php } else if ($peserta['id_tiket'] == 4) { ?>
+                                                            <span class="location">Total Pembayaran : <strong> Free </strong></span>
+                                                        <?php } ?>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- <a class="btn" href="<?= base_url('tamu/print/' . $undangan['id_tamu']) ?>">Print</a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -53,6 +63,32 @@
         </section>
     </main>
 </div>
-<script type="text/javascript">
-    window.print();
-</script>
+
+<div class="modal fade" id="bukti" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload Bukti Pembayaran</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="<?= base_url('pembayaran/addPembayaran'); ?>" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <?php if ($peserta['id_tiket'] == 1) { ?>
+                            <input class="form-control" name="nama_file" type="hidden" value="Pembayaran150K<?= $peserta['nama_peserta'] ?>">
+                        <?php } else { ?>
+                            <input class="form-control" name="nama_file" type="hidden" value="Pembayaran75K<?= $peserta['nama_peserta'] ?>">
+                        <?php } ?>
+                        <label for="exampleFormControlFile1"></label>
+                        <input type="file" class="form-control-file" id="bukti_bayar" name="bukti" data-allowed-file-extensions="png jpg jpeg" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
