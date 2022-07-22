@@ -42,7 +42,7 @@
                                                         <hr>
                                                         <p class="col-sm-12 input-row">
                                                             <label class="label">Email :</label>
-                                                            <input class="form-control" type="email" id="email" name="email" placeholder="Email address *">
+                                                            <input class="form-control" type="email" id="username" name="username" placeholder="Email address *">
                                                         </p>
                                                         <p class="col-sm-12 input-row">
                                                             <label class="label">Password :</label>
@@ -54,15 +54,15 @@
                                                         <hr>
                                                         <p class="col-sm-12 input-row">
                                                             <label class="label">Nomor KTP :</label>
-                                                            <input class="form-control" type="text" id="nik" name="nik" placeholder="">
+                                                            <input class="form-control" type="text" id="nomor_pengenal" name="nomor_pengenal" placeholder="">
                                                         </p>
                                                         <p class="col-sm-12 input-row">
-                                                            <label class="label">Nama :</label>
-                                                            <input class="form-control" type="text" id="nama" name="nama" placeholder="Your name *">
+                                                            <label class="label">Nama Lengkap :</label>
+                                                            <input class="form-control" type="text" id="nama_peserta" name="nama_peserta" placeholder="Your name *">
                                                         </p>
                                                         <p class="col-sm-6 input-row">
-                                                            <label class="label">Jenis Kelamin:</label>
-                                                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="jk">
+                                                            <label class="label">Jenis Kelamin :</label>
+                                                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="jenis_kelamin">
                                                                 <option selected>Pilih Jenis Kelamin</option>
                                                                 <option value="Pria">Pria</option>
                                                                 <option value="Wanita">Wanita</option>
@@ -72,31 +72,42 @@
                                                             <label class="label">Tanggal Lahir :</label>
                                                             <input class="form-control" type="date" id="tgl_lahir" name="tgl_lahir" placeholder="">
                                                         </p>
-                                                        <p class=" col-sm-6 input-row">
-                                                            <label class="label">Nomor Handphone :</label>
-                                                            <input class="form-control" type="text" id="telp" name="tlp" placeholder="Number phone">
-                                                        </p>
-                                                        <p class="col-sm-6 input-row">
-                                                            <label class="label">Nomor Dada :</label>
-                                                            <input class="form-control" type="text" id="no_dada" name="no_dada" placeholder="4 digit nomor" value="<?= $kode ?>">
-                                                        </p>
                                                         <p class="col-sm-12 input-row">
                                                             <label class="label">Alamat :</label>
                                                             <textarea class="form-control" rows="15" cols="75" id="alamat" name="alamat" placeholder="Alamat rumah tinggal saat ini"></textarea>
                                                         </p>
-														 <p class="col-sm-12 input-row">
-                                                            <label class="label">Instagram aktif:</label>
-                                                            <textarea class="form-control" rows="15" cols="75" id="alamat" name="alamat" placeholder="Alamat rumah tinggal saat ini"></textarea>
+                                                        <p class=" col-sm-6 input-row">
+                                                            <label class="label">Nomor Handphone :</label>
+                                                            <input class="form-control" type="text" id="no_hp" name="no_hp" placeholder="Number phone">
+                                                        </p>
+
+                                                        <p class="col-sm-6 input-row">
+                                                            <label class="label">Nomor Dada :</label>
+                                                            <input class="form-control" type="text" id="no_dada" name="no_dada" placeholder="4 digit nomor" value="<?= $no_dada ?>">
+                                                        </p>
+                                                        <span class="">
+                                                            <img src="<?= base_url() ?>assets/images/media/size.jpeg" alt="">
+                                                        </span>
+                                                        <p class="col-sm-6 input-row">
+                                                            <label class="label">Ukuran Baju Jersey :</label>
+                                                            <input class="form-control" type="text" id="size_jersey" name="size_jersey" placeholder="masukan jenis ukuran baju">
+                                                        </p>
+                                                        <p class="col-sm-6 input-row">
+                                                            <label class="label">Instagram Aktif :</label>
+                                                            <input class="form-control" type="text" id="instagram" name="instagram">
+                                                        </p>
+                                                        <p class="col-sm-6 input-row">
+                                                            <label class="label">Golongan Darah :</label>
+                                                            <input class="form-control" type="text" id="gol_darah" name="gol_darah">
                                                         </p>
                                                         <p class="col-sm-12 input-row">
-                                                            <label class="label">Kondisi Medis atau Riwayat Penyakit:</label>
-                                                            <input class="form-control" type="text" id="medis" name="medis" placeholder="isikan terkait kondisi medis saat ini atau riwayat penyakit yang pernah dialami">
+                                                            <label class="label">Kondisi Medis atau Riwayat Penyakit :</label>
+                                                            <input class="form-control" type="text" id="riwayat_medis" name="riwayat_medis" placeholder="isikan terkait kondisi medis saat ini atau riwayat penyakit yang pernah dialami">
                                                         </p>
                                                         <p class="col-sm-12 input-row">
                                                             <input type="submit" id="contactFormSubmit" class="btn">
                                                         </p>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </form>
