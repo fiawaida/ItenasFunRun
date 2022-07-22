@@ -15,7 +15,7 @@ class Pembayaran extends CI_Controller
         $data['peserta'] = $this->db->get_where('tbl_peserta', ['username' => $this->session->userdata('username')])->row_array();
         if ($data['peserta']['keterangan'] == "Telah Bayar") {
             $this->load->view('home/templates/header_user');
-            $this->load->view('home/cetak', $data);
+            $this->load->view('home/pembayaran_berhasil', $data);
             $this->load->view('home/templates/footer');
         } else if ($data['peserta']['keterangan'] == "Belum Bayar") {
             $this->load->view('home/templates/header_user');
