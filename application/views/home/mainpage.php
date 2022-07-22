@@ -222,9 +222,6 @@
                                         <span class="date">13 Agustus 2022</span>
                                         <span class="time">05.45 - 09.00 (WIB)</span>
                                     </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="infoevent_content col-sm-6">
@@ -246,9 +243,6 @@
                                     <div class="datetime">
                                         <span class="date">13 Agustus 2022</span>
                                         <span class="time">05.45 - 09.00 (WIB)</span>
-                                    </div>
-                                    <div class="caption">
-                                        <a class="button" href="https://www.google.com/maps/place/Pullman+Bandung+Grand+Central/@-6.8998265,107.6153726,17z/data=!3m1!4b1!4m8!3m7!1s0x2e68e7efa5fc13fd:0x4601c4c3db0a0f4d!5m2!4m1!1i2!8m2!3d-6.8998265!4d107.6175613">View Map</a>
                                     </div>
                                 </div>
                             </div>
