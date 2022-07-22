@@ -8,6 +8,7 @@ class Home extends CI_Controller
         parent::__construct();
         $this->load->library('session');
         $this->load->model('PendaftaranModel');
+        $this->load->model('Auth_model');
     }
 
     public function index()
@@ -21,20 +22,83 @@ class Home extends CI_Controller
 
     public function addPendaftar()
     {
-
-        $this->PendaftaranModel->addUser150();
-        $this->session->set_flashdata('daftar_berhasil', 'Tugas berhasil ditambahkan');
-        redirect('home/Authlogin');
+        $ada_akun = $this->db->where('username', $this->input->post('username'))->get('tbl_peserta')->row_array();
+        if ($ada_akun['username'] == $this->input->post('username')) {
+            $this->session->set_flashdata('akun_ada', TRUE);
+            redirect($_SERVER['HTTP_REFERER']);
+        } else {
+            $data = array(
+                'id_tiket' => '1',
+                'username' => $this->input->post('username'),
+                'password' => md5($this->input->post('password')),
+                'nomor_pengenal' => $this->input->post('nomor_pengenal'),
+                'nama_peserta' => $this->input->post('nama_peserta'),
+                'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+                'tgl_lahir' => $this->input->post('tgl_lahir'),
+                'alamat' => $this->input->post('alamat'),
+                'no_hp' => str_replace("_", "", $this->input->post('no_hp')),
+                'no_dada' => $this->input->post('no_dada'),
+                'size_jersey' => $this->input->post('size_jersey'),
+                'instagram' => $this->input->post('instagram'),
+                'riwayat_medis' => $this->input->post('riwayat_medis'),
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            );
+        }
+        $query = $this->db->insert('tbl_peserta', $data);
+        if ($query) {
+            $this->session->set_flashdata('insert_akun', "Tambah Berhasil");
+            redirect('home/Authlogin');
+        } else {
+            $this->session->set_flashdata('insert_akun', "Tambah Gagal");
+            redirect('pendaftaran');
+        }
     }
+
 
     public function addPendaftar75()
     {
-
-        $this->PendaftaranModel->addUser75();
+        $ada_akun = $this->db->where('username', $this->input->post('username'))->get('tbl_peserta')->row_array();
+        if ($ada_akun['username'] == $this->input->post('username')) {
+            $this->session->set_flashdata('akun_ada', TRUE);
+            redirect($_SERVER['HTTP_REFERER']);
+        } else {
+            $data = array(
+                'id_tiket' => '2',
+                'username' => $this->input->post('username'),
+                'password' => md5($this->input->post('password')),
+                'nomor_pengenal' => $this->input->post('nomor_pengenal'),
+                'nama_peserta' => $this->input->post('nama_peserta'),
+                'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+                'tgl_lahir' => $this->input->post('tgl_lahir'),
+                'alamat' => $this->input->post('alamat'),
+                'no_hp' => str_replace("_", "", $this->input->post('no_hp')),
+                'no_dada' => $this->input->post('no_dada'),
+                'size_jersey' => $this->input->post('size_jersey'),
+                'instagram' => $this->input->post('instagram'),
+                'riwayat_medis' => $this->input->post('riwayat_medis'),
+                'keterangan' => "Belum Bayar",
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            );
+        }
+        $query = $this->db->insert('tbl_peserta', $data);
+        if ($query) {
+            $this->session->set_flashdata('insert_akun', "Tambah Berhasil");
+            redirect('home/Authlogin');
+        } else {
+            $this->session->set_flashdata('insert_akun', "Tambah Gagal");
+            redirect('pendaftaran');
+        }
+    }
+    public function addPendaftarMahasiswa()
+    {
+        $data['mahasiswa'] = $this->db->get('tbl_mahasiswa')->result();
+        die(var_dump($data['mahasiswa']));
         $this->session->set_flashdata('daftar_berhasil', 'Tugas berhasil ditambahkan');
         redirect('home/Authlogin');
     }
-    public function addPendaftarMahasiswa()
+    public function addPendaftarKaryawan()
     {
 
         $this->PendaftaranModel->addUserMhs();
@@ -59,37 +123,26 @@ class Home extends CI_Controller
         $username = $this->input->post('username');
         $password = $this->input->post('password');
 
-        $user = $this->db->get_where('user', ['username' => $username])->row_array();
+        $user = $this->db->get_where('tbl_peserta', ['username' => $username])->row_array();
 
         //jika usernya ada
         if ($user) {
             //cek password
             if (md5($password) == $user['password']) {
                 $data = [
-                    'username' => $user['username'],
-                    'id_role' => $user['id_role']
+                    'username' => $user['username']
                 ];
 
                 $this->session->set_userdata($data);
-
-                if ($user['id_role'] == 1) {
-                    redirect('pembayaran');
-                } else if ($user['id_role'] == 2) {
-                    redirect('admin');
-                } else {
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
-                Password salah!
-                </div>');
-                    redirect('home/Authlogin');
-                }
+                $this->session->set_flashdata('suksesLogin', TRUE);
+                redirect('pembayaran');
+            } else {
+                $this->session->set_flashdata('gagalLogin', TRUE);
+                redirect('home/Authlogin');
             }
-        } else {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
-            User tidak terdaftar!
-          </div>');
-            redirect('home/Authlogin');
         }
     }
+
 
     public function logout()
     {
