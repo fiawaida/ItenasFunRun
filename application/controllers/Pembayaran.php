@@ -70,4 +70,3 @@ class Pembayaran extends CI_Controller
         redirect('pembayaran');
     }
 }
-
