@@ -21,6 +21,7 @@ class PendaftaranModel extends CI_Model
             'nik' => $this->input->post('nik'),
             'no_hp' => $this->input->post('tlp'),
             'no_dada' => $this->input->post('no_dada'),
+            'instagram' => $this->iput->post('ig'),
             'alamat' => $this->input->post('alamat'),
             'kondisi_medis' => $this->input->post('medis'),
             'status_pembayaran' => 'belum',
